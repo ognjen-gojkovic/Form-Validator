@@ -9,7 +9,7 @@ module.exports = merge(common, {
   output: {
     filename: "./assets/js/[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "",
+    publicPath: "/assets/",
   },
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
