@@ -26,11 +26,16 @@ module.exports = {
       {
         test: /\.(css)$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
           {
             loader: "css-loader",
             options: {
-              modules: true,
+              modules: false,
+              // modules: {
+              //   localIdentName: "[local] _[hash:base64:5]",
+              // },
             },
           },
         ],
